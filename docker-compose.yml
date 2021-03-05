@@ -1,0 +1,9 @@
+services:
+  ratings:
+    build: .
+    image: ghcr.io/praepanwa/bookinfo-details:dev
+    ports:
+      - "9080:9080"
+    environment:
+      SERVICE_VERSION: v1
+     
